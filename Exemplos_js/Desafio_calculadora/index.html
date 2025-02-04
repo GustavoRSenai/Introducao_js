@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="calculadora">
+        <h1>Calculadora</h1>
+        <input id="numero1" type="number" placeholder="Digite o 1º número">
+        <input id="numero2" type="number" placeholder="Digite o 2º número">
+        <div class="botoes">
+            <button onclick="somar()">Somar</button>
+            <button onclick="subtrair()">Subtrair</button>
+            <button onclick="multiplicar()">Multiplicar</button>
+            <button onclick="dividir()">Dividir</button>
+        </div>
+
+        <div class="resul">
+            <p>Resultado:</p><p id="resultado"></p>
+        </div>
+    </div>
+    <div class="calculadora">
+        <h2>Conversor</h2>
+        <select id="moeda">
+            <option value="1">Dólar</option>
+            <option value="2">Euro</option>
+        </select>
+        <input type="number" id="valor">
+        <button onclick="converter()">Converter</button>
+        <div class="resul">
+            <p>Resultado:</p><p id="resultadoconv"></p>
+        </div>
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+</html>
